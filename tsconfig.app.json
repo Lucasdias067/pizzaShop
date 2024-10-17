@@ -32,6 +32,8 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    "src/components/ui/popover.tsx",
+    "src/components/ui/calendar.tsx"
   ]
 }
