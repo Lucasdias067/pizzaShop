@@ -30,4 +30,4 @@ Para instalar as dependências do projeto, execute o seguinte comando:
 
 ```bash
 npm install
-npm run dev
+bun dev
