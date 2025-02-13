@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Pizzashop Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web para gerenciar uma pizzaria, desenvolvida utilizando React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática ao código.
+- **Vite**: Ferramenta de construção de front-end rápida e moderna.
 
-## Expanding the ESLint configuration
+## Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+A estrutura principal do projeto é a seguinte:
+pizzashop-web ├── node_modules/ ├── public/ ├── src/ │ ├── components/ │ ├── pages/ │ ├── services/ │ ├── styles/ │ ├── App.tsx │ └── index.tsx ├── .eslintrc.js ├── .gitignore ├── index.html ├── package.json ├── tsconfig.json └── vite.config.ts
 
-- Configure the top-level `parserOptions` property like this:
+## Scripts Disponíveis
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+No arquivo `package.json`, os seguintes scripts estão disponíveis:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `dev`: Inicia o servidor de desenvolvimento utilizando o Vite.
+- `dev:test`: Inicia o servidor de desenvolvimento em modo de teste.
+- `build`: Compila o projeto utilizando TypeScript e Vite.
+- `lint`: Executa o ESLint para verificação de código.
+- `preview`: Inicia o servidor para pré-visualização do build.
+- `test`: Executa os testes utilizando Vitest.
+
+## Instalação
+
+Para instalar as dependências do projeto, execute o seguinte comando:
+
+```bash
+npm install
+npm run dev
